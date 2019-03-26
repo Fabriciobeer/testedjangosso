@@ -60,6 +60,10 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = 'django_project.urls'
 
+SAML_FOLDER = os.path.join(BASE_DIR, 'saml')
+
+SESSION_ENGINE = 'django.contrib.sessions.backends.file'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -82,16 +86,16 @@ WSGI_APPLICATION = 'django_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'django',
-        'USER': 'django',
-        'PASSWORD': 'd52e1d3bdb3dd17564a4b606d872795b',
-        'HOST': 'localhost',
-        'PORT': '',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'django',
+#         'USER': 'django',
+#         'PASSWORD': 'd52e1d3bdb3dd17564a4b606d872795b',
+#         'HOST': 'localhost',
+#         'PORT': '',
+#     }
+# }
 
 
 # Internationalization
