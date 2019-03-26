@@ -2,13 +2,13 @@
     "strict": true,
     "debug": true,
     "sp": {
-        "entityId": "https://<sp_domain>/metadata/",
+        "entityId": "http://46.101.227.186:8000",
         "assertionConsumerService": {
-            "url": "https://<sp_domain>/?acs",
+            "url": "http://46.101.227.186:8000/",
             "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
         },
         "singleLogoutService": {
-            "url": "https://<sp_domain>/?sls",
+            "url": "http://46.101.227.186:8000",
             "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
         },
         "NameIDFormat": "urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified",
@@ -16,15 +16,15 @@
         "privateKey": ""
     },
     "idp": {
-        "entityId": "https://app.onelogin.com/saml/metadata/<onelogin_connector_id>",
+        "entityId": "https://accounts.google.com/o/saml2?idpid=C00lk31wj",
         "singleSignOnService": {
-            "url": "https://app.onelogin.com/trust/saml2/http-post/sso/<onelogin_connector_id>",
+            "url": "https://accounts.google.com/o/saml2/idp?idpid=C00lk31wj",
             "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
         },
         "singleLogoutService": {
-            "url": "https://app.onelogin.com/trust/saml2/http-redirect/slo/<onelogin_connector_id>",
+            "url": "https://accounts.google.com/o/saml2/idp?idpid=C00lk31wj",
             "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
         },
-        "x509cert": "<onelogin_connector_cert>"
+        "x509cert": "MIIDdDCCAlygAwIBAgIGAWl9xBKUMA0GCSqGSIb3DQEBCwUAMHsxFDASBgNVBAoTC0dvb2dsZSBJbmMuMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MQ8wDQYDVQQDEwZHb29nbGUxGDAWBgNVBAsTD0dvb2dsZSBGb3IgV29yazELMAkGA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWEwHhcNMTkwMzE0MTk1MzE1WhcNMjQwMzEyMTk1MzE1WjB7MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEPMA0GA1UEAxMGR29vZ2xlMRgwFgYDVQQLEw9Hb29nbGUgRm9yIFdvcmsxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAutPdiDIEikeguySs6PYxzAdCnwsRSlM3b+6RFV8yOAlffNEJuKn+IRn7KHK/M41CohCmVfPX4wPclNSt6zB9ufyFGumoKwoMubm575kzJA8i7cEXXCPAEB1oN6lOQW+KOn/m2sD93fE31fqOv6JvfKGfSwe92QN+C6qMclqI0bOQpxDOXZRJqx/werMn82lf72Lb4icPiCovi/YneBaPxQmCM5x3FSftd3FRtduNDlPRAzgvOeopz+GGyCBandBw0JBTD9QrrmnRYxovX/Fk4Q0sKDHHTPT/WHWEWtK8MiGttQfsRh9DB4/CLqwzO5aa0eRjj0UtFVZkcoeHgnNj1wIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQAhreuRTVSabjKm+qHxfmx+ON2LCKut6DQRFwDKBhq6Si3fdnh1Uj0wLiN3utjlOiwPUxroQoj7lH5VLDAG7oLqOgHh8110ESzZDwEMd6oM+fEwBX7i9apo3vsWcLxXIgUc3Snbi+YpmzfnLtyEZ4S9L3mgO2Z5UIgZOGhJAWwsHgzPGEWRUw3Vr78/SgOv7b8OGaEe6niaXIcNX7t3cS5UHpSyfJXoxwZaoomcFJm0U9GDZ7udbzY6jjEi6R15H3AWkPIjaFtJhNnsB7GzV2YUKFqXe9pU6u11Mix6ITsKVBrwk3o2cS2cP4nK/WvCuy5cJrSwuEtz2BfXxxNboPOM"
     }
 }
