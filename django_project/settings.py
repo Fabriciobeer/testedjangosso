@@ -67,7 +67,7 @@ SESSION_ENGINE = 'django.contrib.sessions.backends.file'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [r'/home/django/django_project/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
