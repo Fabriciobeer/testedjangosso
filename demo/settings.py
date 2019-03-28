@@ -174,7 +174,7 @@ DEBUG = True
 # # Discover our IP address
 # ALLOWED_HOSTS = ip_addresses()
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['localhost', '46.101.227.186', 'google.bixtecnologia.com.br']
 
 # Application definition
 
