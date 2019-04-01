@@ -3,13 +3,13 @@
     "debug": true,
     "sp": {
         //"entityId": "http://142.93.87.89/metadata/",
-        "entityId": "http://142.93.87.89/metadata/",
+        "entityId": "http://google.bixtecnologia.com.br/metadata/",
         "assertionConsumerService": {
-            "url": "http://142.93.87.89/?acs",
+            "url": "http://google.bixtecnologia.com.br/?acs",
             "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
         },
         "singleLogoutService": {
-            "url": "http://142.93.87.89/?sls",
+            "url": "http://google.bixtecnologia.com.br/?sls",
             "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
         },
         "NameIDFormat": "urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified",
