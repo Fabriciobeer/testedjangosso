@@ -2,7 +2,7 @@
     "strict": true,
     "debug": true,
     "sp": {
-        //"entityId": "http://46.101.227.186:80/metadata/",
+        //"entityId": "http://142.93.87.89/metadata/",
         "entityId": "https://142.93.87.89/metadata/",
         "assertionConsumerService": {
             "url": "https://142.93.87.89/?acs",
