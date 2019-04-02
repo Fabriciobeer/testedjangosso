@@ -32,6 +32,7 @@ def prepare_django_request(request):
 
 def index(request):
     req = prepare_django_request(request)
+    import pdb; pdb.set_trace()
     auth = init_saml_auth(req)
     errors = []
     error_reason = None
